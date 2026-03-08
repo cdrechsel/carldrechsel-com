@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply bg-white text-zinc-900 antialiased;
+}
+
+.container-shell {
+  @apply mx-auto w-full max-w-6xl px-4 sm:px-6 lg:px-8;
+}
+
+.section-pad {
+  @apply py-16 sm:py-20;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  @apply tracking-tight;
+}
+
+a {
+  @apply underline-offset-4;
+}
