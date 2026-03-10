@@ -1,38 +1,38 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import "../styles/globals.css";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://carldrechsel.com"),
   title: {
-    default: "Carl Drechsel | AI Enablement and Digital Workplace Transformation",
+    default: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
     template: "%s | Carl Drechsel"
   },
   description:
-    "Enterprise architect helping organizations modernize work with AI, Microsoft 365, and secure productivity platforms.",
+    "Carl Drechsel is a Technical Solutions Architect focused on enterprise AI transformation, Microsoft Copilot strategy, Microsoft 365, digital workplace modernization, collaboration architecture, and secure productivity.",
   openGraph: {
-    title: "Carl Drechsel | AI Enablement and Digital Workplace Transformation",
+    title: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
     description:
-      "Enterprise architect helping organizations modernize work with AI, Microsoft 365, and secure productivity platforms.",
+      "Enterprise AI transformation, Copilot strategy, Microsoft 365 modernization, and digital workplace leadership.",
     url: "https://carldrechsel.com",
     siteName: "Carl Drechsel",
-    locale: "en_US",
-    type: "website"
+    type: "website",
+    locale: "en_US"
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
+    description:
+      "Senior Technical Solutions Architect focused on AI transformation, Microsoft 365, Copilot strategy, and digital workplace modernization."
   },
   alternates: {
-    canonical: "https://carldrechsel.com"
-  },
-  keywords: [
-    "Carl Drechsel",
-    "AI Enablement",
-    "Microsoft Copilot Strategy",
-    "Digital Workplace Transformation",
-    "Microsoft 365",
-    "Enterprise Architecture",
-    "Zero Trust"
-  ]
+    canonical: "https://carldrechsel.com",
+    types: {
+      "application/rss+xml": [{ url: "https://carldrechsel.com/insights/rss.xml", title: "Carl Drechsel Insights RSS" }]
+    }
+  }
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
@@ -45,11 +45,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         >
           Skip to main content
         </a>
-        <div id="top" className="min-h-screen bg-white">
-          <Header />
-          <main id="main-content">{children}</main>
-          <Footer />
-        </div>
+        {children}
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
