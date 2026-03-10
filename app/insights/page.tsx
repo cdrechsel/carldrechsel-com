@@ -31,7 +31,13 @@ export default async function InsightsPage({ searchParams }: InsightsPageProps) 
   ]);
 
   const featuredPosts = (posts || []).filter((post) => post.featured);
-  const regularPosts = (posts || []).filter((post) => !post.featured);
+  const featuredKeys = new Set(
+    featuredPosts.map((post) => post.slug?.current || post._id).filter(Boolean)
+  );
+  const regularPosts = (posts || []).filter((post) => {
+    const key = post.slug?.current || post._id;
+    return Boolean(key) && !featuredKeys.has(key);
+  });
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-900">
