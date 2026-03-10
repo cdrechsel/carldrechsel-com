@@ -11,6 +11,7 @@ export const metadata: Metadata = {
   description:
     "Executive insights on enterprise AI transformation, Microsoft Copilot strategy, digital workplace modernization, and architecture-led adoption."
 };
+export const revalidate = 0;
 
 type InsightsPageProps = {
   searchParams?: {

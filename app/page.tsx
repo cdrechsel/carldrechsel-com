@@ -8,6 +8,8 @@ import { SanityPost } from "@/lib/sanity/types";
 import { formatDate } from "@/lib/utils/date";
 import { featuredWorkConcepts } from "@/content/featuredWork";
 
+export const revalidate = 0;
+
 const expertise = [
   ["AI Enablement & Transformation", "Design enterprise AI adoption models that connect technology investment to measurable productivity improvements, workflow change, and decision advantage."],
   ["Microsoft Copilot Strategy", "Shape readiness, governance, adoption, and value realization strategies that enable Copilot to integrate into real enterprise operating environments."],

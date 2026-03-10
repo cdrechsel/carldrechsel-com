@@ -14,7 +14,8 @@ export const client = sanityEnabled
       apiVersion,
       dataset,
       projectId,
-      useCdn: !token,
+      // Prefer consistency over edge-cached lag for authority content pages.
+      useCdn: false,
       perspective: "published",
       token
     })
