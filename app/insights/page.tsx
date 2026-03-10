@@ -89,11 +89,17 @@ export default async function InsightsPage({ searchParams }: InsightsPageProps) 
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold tracking-tight">All Insights</h2>
-          <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-            {(regularPosts.length > 0 ? regularPosts : posts || []).map((post) => (
-              <InsightCard key={post._id} post={post} eventName="insight_click" />
-            ))}
-          </div>
+          {regularPosts.length > 0 ? (
+            <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+              {regularPosts.map((post) => (
+                <InsightCard key={post._id} post={post} eventName="insight_click" />
+              ))}
+            </div>
+          ) : (
+            <div className="mt-6 rounded-2xl border border-zinc-200 bg-white p-6 text-zinc-600 shadow-sm">
+              No additional insights yet.
+            </div>
+          )}
         </section>
       </main>
       <SiteFooter />
