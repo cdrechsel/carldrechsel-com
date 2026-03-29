@@ -7,15 +7,15 @@ import "./globals.css";
 export const metadata: Metadata = {
   metadataBase: new URL("https://carldrechsel.com"),
   title: {
-    default: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
+    default: "Carl Drechsel | Cloud Solution Architecture, AI Transformation, and Technical Leadership",
     template: "%s | Carl Drechsel"
   },
   description:
-    "Carl Drechsel is a Technical Solutions Architect focused on enterprise AI transformation, Microsoft Copilot strategy, Microsoft 365, digital workplace modernization, collaboration architecture, and secure productivity.",
+    "Carl Drechsel is a technical leader focused on cloud solution architecture, Azure delivery, enterprise AI transformation, Microsoft platforms, and customer-facing execution across complex enterprise environments.",
   openGraph: {
-    title: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
+    title: "Carl Drechsel | Cloud Solution Architecture, AI Transformation, and Technical Leadership",
     description:
-      "Enterprise AI transformation, Copilot strategy, Microsoft 365 modernization, and digital workplace leadership.",
+      "Cloud solution architecture, Azure delivery leadership, enterprise AI transformation, and customer success execution.",
     url: "https://carldrechsel.com",
     siteName: "Carl Drechsel",
     type: "website",
@@ -23,9 +23,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Carl Drechsel | Enterprise AI Transformation & Digital Workplace Strategy",
+    title: "Carl Drechsel | Cloud Solution Architecture, AI Transformation, and Technical Leadership",
     description:
-      "Senior Technical Solutions Architect focused on AI transformation, Microsoft 365, Copilot strategy, and digital workplace modernization."
+      "Technical leader focused on cloud solution architecture, Azure delivery, enterprise AI transformation, and customer-facing execution."
   },
   alternates: {
     canonical: "https://carldrechsel.com",

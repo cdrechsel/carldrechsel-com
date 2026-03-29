@@ -15,6 +15,7 @@ export type FeaturedWorkConcept = {
   slug: string;
   shortDescription: string;
   summary: string;
+  roleRelevance: string;
   eyebrow: string;
   subtitle: string;
   intro: string[];
@@ -34,6 +35,8 @@ export const featuredWorkConcepts: FeaturedWorkConcept[] = [
       "An applied AI concept for converting sales conversations into structured deal intelligence, opportunity insight, and execution momentum.",
     summary:
       "SalesInsight demonstrates how teams can move from conversation to intelligence to action through a repeatable, AI-enabled workflow.",
+    roleRelevance:
+      "Demonstrates customer-facing execution design, stakeholder alignment, and the ability to turn conversational complexity into structured delivery outcomes.",
     eyebrow: "Featured Concept",
     subtitle: "AI-Driven Sales Intelligence from Real Conversations",
     intro: [
@@ -97,6 +100,8 @@ export const featuredWorkConcepts: FeaturedWorkConcept[] = [
       "A practical enterprise framework for preparing organizations to successfully adopt Microsoft Copilot.",
     summary:
       "The model focuses on readiness, governance, workflow alignment, and adoption strategy so AI capabilities translate into measurable productivity gains.",
+    roleRelevance:
+      "Highlights executive communication, architecture planning, governance leadership, and cross-functional readiness for enterprise-scale transformation.",
     eyebrow: "Featured Framework",
     subtitle: "A Practical Model for Enterprise Copilot Adoption",
     intro: [
@@ -152,6 +157,8 @@ export const featuredWorkConcepts: FeaturedWorkConcept[] = [
       "A tool-agnostic enterprise model for scaling AI assistant adoption across Copilot, ChatGPT, and Gemini.",
     summary:
       "The framework translates assistant access into repeatable workflow execution through governance, enablement, and measurement.",
+    roleRelevance:
+      "Shows how technical architecture, operational execution, and measurable adoption can be brought together in a reusable delivery model.",
     eyebrow: "Featured Framework",
     subtitle: "A Practical Model for Enterprise AI Assistant Adoption",
     intro: [
@@ -206,6 +213,8 @@ export const featuredWorkConcepts: FeaturedWorkConcept[] = [
       "A structured approach for redesigning knowledge work so AI enhances decision clarity, collaboration, and operational performance.",
     summary:
       "The framework helps organizations move beyond experimenting with AI tools toward meaningful workflow transformation.",
+    roleRelevance:
+      "Reflects strategic architecture thinking and the ability to define implementation patterns that support scalable customer outcomes.",
     eyebrow: "Featured Framework",
     subtitle: "Redesigning Knowledge Work for the AI Era",
     intro: [
@@ -246,6 +255,74 @@ export const featuredWorkConcepts: FeaturedWorkConcept[] = [
     seoTitle: "AI Productivity Framework | Featured Work | Carl Drechsel",
     metaDescription:
       "A structured framework for redesigning knowledge work so AI improves decision clarity, collaboration, and operational performance."
+  },
+  {
+    title: "Cloud Delivery Acceleration Model",
+    slug: "cloud-delivery-acceleration-model",
+    shortDescription:
+      "A practical operating model for moving cloud initiatives from architecture into execution with clearer ownership, better coordination, and fewer delivery stalls.",
+    summary:
+      "The model brings together execution planning, delivery oversight, blocker removal, and cross-team coordination across complex cloud programs.",
+    roleRelevance:
+      "Shows how architectural thinking can be translated into practical delivery leadership, especially when programs involve multiple teams, dependencies, and operational risk.",
+    eyebrow: "Featured Operating Model",
+    subtitle: "A Practical Model For Moving Cloud Architecture Into Real Delivery",
+    intro: [
+      "Many cloud initiatives have a clear target state but still lose momentum during implementation. The issue is usually not the architecture itself. It is the gap between design, coordination, and day-to-day execution.",
+      "The Cloud Delivery Acceleration Model is a practical operating approach for closing that gap. It focuses on how work gets sequenced, how dependencies are managed, how blockers are removed, and how teams stay aligned once delivery begins.",
+      "Rather than treating architecture as a one-time design step, this model treats architecture as something that has to stay connected to execution all the way through rollout."
+    ],
+    problem: {
+      title: "The Delivery Gap",
+      body: "Cloud programs often slow down after planning because the path from approved design to delivered outcome is not managed with enough operational rigor.",
+      bullets: [
+        "Architecture decisions are not converted into clear implementation waves, owners, and checkpoints",
+        "Dependencies across platform teams, security, networking, and operations are discovered too late",
+        "Blockers persist across handoffs because ownership for removal is unclear",
+        "Technical and operational risks surface during implementation instead of being managed earlier",
+        "Delivery quality becomes inconsistent because execution depends too heavily on ad hoc coordination"
+      ]
+    },
+    concept: {
+      title: "The Operating Model",
+      body: "The Cloud Delivery Acceleration Model organizes execution around four connected motions that keep architecture, delivery, and operational reality tied together:",
+      pillars: [
+        {
+          title: "Delivery Ownership",
+          body: "Establish clear accountability for scope, sequencing, success criteria, and overall delivery health from the start."
+        },
+        {
+          title: "Architecture-To-Execution Translation",
+          body: "Turn architecture into executable work by defining implementation waves, dependencies, decision points, and delivery checkpoints."
+        },
+        {
+          title: "Blocker Removal And Risk Management",
+          body: "Surface technical and organizational risks early, resolve blockers quickly, and keep delivery moving through active intervention."
+        },
+        {
+          title: "Operational Feedback And Reuse",
+          body: "Capture working patterns, common failure points, and implementation lessons so future projects start from stronger foundations."
+        }
+      ]
+    },
+    applications: {
+      title: "How It Works In Practice",
+      body: "This model is most useful when cloud programs involve several teams, shared dependencies, and a need for tighter execution control once implementation starts.",
+      bullets: [
+        "Use a structured intake to clarify target architecture, constraints, owners, and readiness before work begins",
+        "Break delivery into implementation waves so teams know what has to happen now, next, and later",
+        "Track dependencies and decision points explicitly instead of letting them remain buried in meetings and documents",
+        "Run active checkpointing during delivery to surface blockers before they become schedule or quality issues",
+        "Feed lessons learned back into templates, patterns, and future planning so each project improves the next one"
+      ]
+    },
+    whyItMatters: {
+      title: "Why It Matters",
+      body: "Cloud success is often determined less by the target architecture than by how consistently teams can execute against it. The Cloud Delivery Acceleration Model is useful because it creates a practical bridge between solution design and delivery reality. It helps teams keep momentum, reduce avoidable friction, and turn architectural intent into implemented outcomes."
+    },
+    seoTitle: "Cloud Delivery Acceleration Model | Featured Work | Carl Drechsel",
+    metaDescription:
+      "A practical model for customer-facing cloud delivery leadership spanning architecture translation, execution oversight, blocker removal, and stakeholder alignment."
   }
 ];
 

@@ -7,7 +7,7 @@ import { featuredWorkConcepts } from "@/content/featuredWork";
 export const metadata: Metadata = {
   title: "Featured Work",
   description:
-    "Strategic concepts and frameworks exploring enterprise AI transformation, Copilot adoption, and modern knowledge work."
+    "Strategic concepts and frameworks demonstrating cloud architecture thinking, enterprise AI transformation, customer-facing execution, and delivery leadership."
 };
 
 export default function FeaturedWorkPage() {
@@ -18,7 +18,7 @@ export default function FeaturedWorkPage() {
         <section>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">Strategic Concepts</p>
           <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">Featured Work</h1>
-          <p className="mt-4 max-w-3xl text-lg text-zinc-600">Concepts and frameworks exploring enterprise AI transformation, Copilot adoption, and modern knowledge work.</p>
+          <p className="mt-4 max-w-3xl text-lg text-zinc-600">Concepts and frameworks demonstrating technical leadership, customer-centered architecture, enterprise AI transformation, and execution thinking across complex environments.</p>
         </section>
 
         <section className="mt-8">
@@ -26,8 +26,12 @@ export default function FeaturedWorkPage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">AI Transformation Model</p>
             <h2 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-900">One integrated model across strategy, implementation, and application</h2>
             <p className="mt-3 max-w-4xl text-zinc-600">
-              These three featured concepts are connected as one progression: Enterprise AI Productivity Framework,
+              The AI-focused featured concepts are connected as one progression: Enterprise AI Productivity Framework,
               AI Productivity Tool Accelerator, and SalesInsight.
+            </p>
+            <p className="mt-3 max-w-4xl text-zinc-600">
+              Alongside that progression, the Cloud Delivery Acceleration Model shows how I think about customer-facing
+              execution, delivery oversight, and translating architecture into coordinated outcomes.
             </p>
             <a
               href="/ai-transformation-model"

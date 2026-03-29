@@ -127,6 +127,10 @@ export default function FeaturedWorkDetailPage({ params }: FeaturedWorkDetailPag
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500">{concept.eyebrow}</p>
           <h1 className="mt-3 text-4xl font-semibold tracking-tight sm:text-5xl">{concept.title}</h1>
           <p className="mt-3 text-xl text-zinc-600">{concept.subtitle}</p>
+          <div className="mt-6 rounded-xl border border-zinc-200 bg-zinc-50 p-5">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-zinc-500">Leadership Relevance</p>
+            <p className="mt-2 text-zinc-700">{concept.roleRelevance}</p>
+          </div>
           <div className="mt-6 space-y-4 text-zinc-700">
             {concept.intro.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>

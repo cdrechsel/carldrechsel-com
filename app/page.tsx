@@ -11,31 +11,31 @@ import { featuredWorkConcepts } from "@/content/featuredWork";
 export const revalidate = 0;
 
 const expertise = [
-  ["AI Enablement & Transformation", "Design enterprise AI adoption models that connect technology investment to measurable productivity improvements, workflow change, and decision advantage."],
-  ["Microsoft Copilot Strategy", "Shape readiness, governance, adoption, and value realization strategies that enable Copilot to integrate into real enterprise operating environments."],
-  ["Digital Workplace Transformation", "Modernize workforce productivity environments across collaboration tools, process design, and digital employee experience."],
-  ["Enterprise Collaboration Architecture", "Design collaboration ecosystems across Microsoft 365 that align governance, knowledge flow, platform architecture, and workforce needs."],
-  ["Microsoft 365 Strategy", "Define Microsoft 365 architecture and service models that support secure, scalable modernization across large enterprise environments."],
-  ["Zero Trust-Aligned Productivity", "Integrate identity, security, and usability so modern security controls remain practical for real work and sustainable adoption."],
-  ["Business-to-Technology Translation", "Bridge executive priorities and technical architecture into executable transformation strategies, operating models, and roadmaps."],
-  ["AI Operating Model Alignment", "Align governance, workflow ownership, platform controls, and change execution so AI adoption scales with consistency and trust."]
+  ["Cloud Solution Architecture", "Lead end-to-end solution design across cloud platforms, enterprise infrastructure, identity, security, and operational delivery."],
+  ["Azure And Microsoft Platform Delivery", "Translate business requirements into deployable Azure and Microsoft platform solutions that balance speed, governance, and operational readiness."],
+  ["Technical Leadership And People Management", "Coach technical teams, set delivery expectations, remove blockers, and maintain high standards across customer-facing execution."],
+  ["Customer Success And Stakeholder Alignment", "Build credibility with technical decision makers and executive stakeholders by connecting architecture choices to measurable outcomes."],
+  ["Enterprise AI Transformation", "Help organizations move from isolated AI capabilities to governed implementation patterns, workflow redesign, and scalable adoption."],
+  ["Project And Portfolio Execution", "Oversee complex initiatives from architecture through implementation, coordinating delivery, risk management, and cross-functional accountability."],
+  ["Business-To-Technology Translation", "Bridge strategy, technical architecture, and delivery execution so priorities become actionable plans and shipped outcomes."],
+  ["Governance, Security, And Operating Model Design", "Align platform decisions with identity, compliance, and operational controls so transformation scales with trust."]
 ] as const;
 
 const evolution = [
   ["Technical Foundations", "Built deep enterprise technical credibility across infrastructure, messaging, collaboration platforms, and large-scale platform operations supporting global organizations."],
   ["Enterprise Architecture", "Evolved into architecture leadership aligning identity, governance, security, and modernization strategy to business goals and enterprise transformation priorities."],
-  ["Digital Workplace Transformation", "Led workforce productivity and end-user computing modernization initiatives that improved collaboration, user experience, security posture, and operational efficiency at scale."],
-  ["AI Transformation Leadership", "Focused on helping organizations translate emerging AI capabilities into real operating change through workflow redesign, governance alignment, and enterprise adoption strategy."]
+  ["Delivery Leadership", "Led enterprise modernization efforts across workforce productivity, platform execution, stakeholder alignment, and customer-facing transformation work."],
+  ["Cloud And AI Leadership", "Focused on connecting architecture, execution, and organizational change so cloud and AI initiatives produce durable business outcomes."]
 ] as const;
 
 const enterpriseExpertise = [
-  "Enterprise AI enablement strategy and operating model execution",
-  "Microsoft 365 architecture, service design, and collaboration platform modernization",
-  "Copilot readiness, adoption strategy, and workflow integration planning",
-  "Identity modernization, access governance, and Zero Trust-aligned productivity",
-  "Digital workplace transformation and end-user experience improvement",
-  "Enterprise architecture alignment across business priorities and technical delivery",
-  "Governance, risk, compliance, and responsible AI usage controls"
+  "Cloud solution architecture and technical delivery leadership",
+  "Azure, Microsoft platform, and enterprise infrastructure modernization",
+  "Customer-facing architecture, stakeholder management, and executive alignment",
+  "People leadership, coaching, and high-performance team development",
+  "Enterprise AI transformation, Copilot strategy, and workflow enablement",
+  "Identity, governance, security, and operating model design",
+  "Program execution, risk removal, and cross-functional coordination"
 ];
 
 export default async function HomePage() {
@@ -54,11 +54,11 @@ export default async function HomePage() {
       <main id="main-content" className="site-main">
         <section className="grid gap-8 lg:grid-cols-[1.25fr,0.75fr]">
           <div>
-            <p className="kicker">Enterprise AI Enablement · Digital Workplace Transformation</p>
+            <p className="kicker">Cloud Solution Architecture · Enterprise AI Transformation · Technical Leadership</p>
             <h1 className="mt-4 text-5xl font-semibold tracking-tight sm:text-6xl lg:text-7xl">Carl Drechsel</h1>
-            <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">Technical Solutions Architect | Enterprise AI Transformation | Digital Workplace Strategy</p>
-            <h2 className="mt-6 max-w-4xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Helping organizations translate AI capabilities into real operational change.</h2>
-            <p className="section-intro mt-5">With more than two decades of experience across enterprise infrastructure, Microsoft 365 architecture, identity modernization, and digital workplace transformation, Carl helps organizations redesign how work happens so AI delivers measurable productivity, stronger decision-making, and scalable business value.</p>
+            <p className="mt-3 text-sm font-medium uppercase tracking-[0.16em] text-zinc-500">Technical Leader | Cloud Solution Architecture | Customer Success Execution</p>
+            <h2 className="mt-6 max-w-4xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">Leading cloud, platform, and AI delivery from strategy through hands-on execution.</h2>
+            <p className="section-intro mt-5">With more than two decades of experience across enterprise infrastructure, Microsoft platforms, identity modernization, architecture, and transformation delivery, Carl helps organizations move complex initiatives from whiteboard strategy to production execution with strong stakeholder alignment and measurable business impact.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <TrackLink href="/resume.pdf" eventName="resume_download" className="btn-primary">Download Resume</TrackLink>
               <TrackLink href="#featured" eventName="featured_work_nav" className="btn-secondary">View Featured Work</TrackLink>
@@ -67,7 +67,7 @@ export default async function HomePage() {
           </div>
           <aside id="resume" className="surface-card scroll-mt-28 p-7 lg:self-start">
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">Where I Lead</p>
-            <p className="mt-3 text-sm font-medium text-zinc-700">Enterprise AI transformation, digital workplace modernization, and architecture-led execution.</p>
+            <p className="mt-3 text-sm font-medium text-zinc-700">Customer-facing cloud architecture, technical delivery leadership, and enterprise AI execution.</p>
             <ul className="mt-4 space-y-3 text-sm text-zinc-700">
               {enterpriseExpertise.map((item) => (
                 <li key={item} className="border-l-2 border-zinc-200 pl-3">
@@ -75,16 +75,16 @@ export default async function HomePage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-5 text-sm text-zinc-600">I help organizations connect enterprise architecture, governance, and workflow design so AI adoption produces measurable productivity, stronger decision velocity, and sustainable operating impact.</p>
+            <p className="mt-5 text-sm text-zinc-600">I help organizations connect architecture, delivery execution, governance, and team leadership so cloud and AI investments turn into real customer outcomes.</p>
           </aside>
         </section>
 
         <section id="about" className="section-block !pt-10 !pb-0">
           <h2 className="section-title">About</h2>
           <div className="mt-5 max-w-4xl space-y-5 text-lg text-zinc-600">
-            <p>Carl Drechsel is a technology strategist focused on enterprise workforce transformation, digital workplace modernization, and AI-enabled productivity.</p>
-            <p>Over the course of a 20+ year career spanning engineering, enterprise architecture, and strategic advisory roles, he has helped global organizations modernize collaboration platforms, strengthen security and identity foundations, and improve how work happens across large enterprise environments.</p>
-            <p>His background across infrastructure, Microsoft 365 architecture, identity modernization, and digital workplace transformation gives him a practical foundation for enterprise AI leadership. Rather than treating AI as a standalone tool deployment, Carl focuses on how organizations redesign workflows, governance models, and operating environments so AI capabilities translate into meaningful productivity gains and better decision-making.</p>
+            <p>Carl Drechsel is a technical leader focused on cloud solution architecture, enterprise platform transformation, and customer-facing execution.</p>
+            <p>Over the course of a 20+ year career spanning engineering, enterprise architecture, strategic advisory work, and delivery leadership, he has helped organizations modernize platforms, strengthen identity and security foundations, and execute complex technology initiatives across large enterprise environments.</p>
+            <p>His background across infrastructure, Microsoft platforms, governance, and AI transformation gives him a practical foundation for roles that require both technical depth and leadership range. Carl is most effective where customer outcomes depend on strong architecture, hands-on problem solving, team coaching, and disciplined execution across stakeholders.</p>
           </div>
         </section>
 
@@ -114,12 +114,12 @@ export default async function HomePage() {
         </section>
 
         <section className="surface-card-padded mt-10">
-          <h2 className="section-title">Enterprise Perspective</h2>
+          <h2 className="section-title">Leadership Perspective</h2>
           <div className="mt-4 max-w-4xl space-y-4 text-zinc-600">
-            <p><strong>Technology only transforms organizations when it transforms how work happens.</strong></p>
-            <p>In large enterprises, meaningful adoption depends on how well new capabilities integrate with identity, security, governance, collaboration platforms, workflow design, operating models, and user experience.</p>
-            <p>AI introduces a new layer to this same reality. Deploying AI tools alone rarely produces lasting value. Real impact emerges when workflows, decision processes, and governance evolve alongside the technology.</p>
-            <p>When those elements move together, AI becomes more than a capability-it becomes a multiplier for enterprise performance.</p>
+            <p><strong>Technical leadership creates value when strategy, execution, and accountability move together.</strong></p>
+            <p>In large enterprises, successful cloud and AI initiatives depend on more than architecture diagrams. They require delivery discipline, clear stakeholder alignment, operational readiness, and leaders who can switch comfortably between customer conversations and hands-on technical problem solving.</p>
+            <p>That is the environment where Carl does his best work: guiding teams, removing blockers, shaping architecture, and helping customers move high-value initiatives into real execution.</p>
+            <p>When those elements move together, cloud and AI become more than technology investments. They become engines for customer success and enterprise performance.</p>
           </div>
         </section>
 
@@ -130,8 +130,12 @@ export default async function HomePage() {
             <p className="text-xs font-semibold uppercase tracking-[0.16em] text-zinc-500">AI Transformation Model</p>
             <h3 className="mt-2 text-2xl font-semibold tracking-tight text-zinc-900">One integrated model across strategy, implementation, and application</h3>
             <p className="mt-3 max-w-4xl text-zinc-600">
-              These three featured concepts are connected as one progression: Enterprise AI Productivity Framework,
+              The AI-focused featured concepts are connected as one progression: Enterprise AI Productivity Framework,
               AI Productivity Tool Accelerator, and SalesInsight.
+            </p>
+            <p className="mt-3 max-w-4xl text-zinc-600">
+              Alongside that progression, the Cloud Delivery Acceleration Model extends the portfolio into customer-facing
+              execution, delivery leadership, and architecture-to-implementation oversight.
             </p>
             <TrackLink
               href="/ai-transformation-model"
@@ -175,8 +179,8 @@ export default async function HomePage() {
         </section>
 
         <section id="contact" className="surface-card-padded scroll-mt-28 mt-10">
-          <h2 className="section-title">Let’s build the future of work.</h2>
-          <p className="mt-4 max-w-3xl text-zinc-600">Carl is open to recruiting conversations, consulting engagements, and executive discussions focused on enterprise AI transformation, Copilot strategy, and digital workplace modernization.</p>
+          <h2 className="section-title">Let’s build and deliver what matters.</h2>
+          <p className="mt-4 max-w-3xl text-zinc-600">Carl is open to leadership conversations focused on cloud solution architecture, customer success, Azure and Microsoft platform delivery, and enterprise AI transformation.</p>
           <div className="mt-6 flex flex-col gap-3 sm:flex-row">
             <TrackLink href="/resume.pdf" eventName="resume_download" label="contact_resume" className="btn-secondary">Download Resume</TrackLink>
             <TrackLink href="https://www.linkedin.com/in/carldrechsel/" eventName="linkedin_click" label="contact_linkedin" className="btn-secondary" target="_blank" rel="noreferrer">LinkedIn</TrackLink>
